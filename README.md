@@ -1,6 +1,23 @@
-# FlowPilot SaaS Landing Page
+# FlowPilot | SaaS Dashboard Landing Page
 
-A modern, responsive SaaS landing page designed to showcase dashboard UI, front-end development, and clean user experience.
+A modern and responsive SaaS landing page designed and developed from concept to code.
+
+This portfolio project demonstrates UI/UX design, responsive front-end development, JavaScript interactions, and a real-world web development workflow.
+
+## 📸 Preview
+
+![FlowPilot Preview](images/flowpilot-preview.png)
+
+---
+
+## 🚀 Project Highlights
+
+- Fully responsive design
+- Interactive JavaScript animations
+- Mobile-first layout
+- Modern SaaS dashboard UI
+- Clean Information Architecture
+- Built from Figma design to production-ready code
 
 ---
 
