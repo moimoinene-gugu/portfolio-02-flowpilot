@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowPilot</title>
+    <title>FlowPilot | Smart Project Management</title>
+    <meta
+  name="description"
+  content="FlowPilot helps teams manage projects, track performance, and grow faster."
+>
+
+<link rel="icon" href="data:,">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -44,10 +50,9 @@
     </nav>
 </header>
 <main>
-
   <section class="hero">
 
-    <div class="container hero-container">
+    <div class="hero-container">
 
       <div class="hero-text">
 
@@ -129,8 +134,7 @@
     </div>
 
 </section>
-<section class="features reveal">
-
+<section id="features" class="features reveal">
     <div class="container">
 
         <div class="section-title">
@@ -147,9 +151,19 @@
 
     <div class="feature-card">
         
-    <div class="feature-icon">
-                    📊
-                </div>
+    <div class="feature-icon" aria-hidden="true">
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M3 3v18h18"></path>
+        <path d="M7 16l4-5 4 3 5-7"></path>
+    </svg>
+</div>
 
                 <h3>Analytics</h3>
 
@@ -162,9 +176,18 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">
-                    ⚡
-                </div>
+                <div class="feature-icon" aria-hidden="true">
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M13 2L4 14h7l-1 8 10-14h-7l0-6z"></path>
+    </svg>
+</div>
 
                 <h3>Automation</h3>
 
@@ -177,9 +200,21 @@
 
             <div class="feature-card">
 
-                <div class="feature-icon">
-                    🤝
-                </div>
+                <div class="feature-icon" aria-hidden="true">
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="10" cy="7" r="4"></circle>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </svg>
+</div>
 
                 <h3>Collaboration</h3>
 
@@ -210,14 +245,88 @@
 
         <div class="dashboard-preview-card">
 
-            <div class="dashboard-placeholder">
-                <span>FlowPilot Dashboard</span>
-            </div>
-
+    <div class="dashboard-topbar">
+        <div>
+            <p class="dashboard-label">Overview</p>
+            <h3>FlowPilot Dashboard</h3>
         </div>
 
+        <button class="dashboard-filter" type="button">
+            Last 30 days
+        </button>
+ <div class="dashboard-kpi-grid">
+
+    <div class="dashboard-kpi">
+        <span>Total Revenue</span>
+        <strong class="counter" data-target="48240" data-prefix="$">0</strong>
+        <small>↑ 12.5% this month</small>
     </div>
 
+    <div class="dashboard-kpi">
+        <span>Active Projects</span>
+        <strong class="counter" data-target="24">0</strong>
+        <small>6 nearing completion</small>
+    </div>
+
+    <div class="dashboard-kpi">
+        <span>Team Productivity</span>
+        <strong class="counter" data-target="92" data-suffix="%">0</strong>
+        <small>↑ 8.2% this month</small>
+    </div>
+
+</div>
+
+    <div class="dashboard-main-grid">
+
+        <div class="dashboard-chart-card">
+            <div class="dashboard-card-heading">
+                <div>
+                    <span>Performance</span>
+                    <h4>Productivity Overview</h4>
+                </div>
+
+                <strong>+18.6%</strong>
+            </div>
+
+            <div class="dashboard-chart">
+                <span style="height: 42%"></span>
+                <span style="height: 58%"></span>
+                <span style="height: 48%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 64%"></span>
+                <span style="height: 86%"></span>
+                <span style="height: 76%"></span>
+            </div>
+        </div>
+
+        <div class="dashboard-activity-card">
+            <div class="dashboard-card-heading">
+                <div>
+                    <span>Updates</span>
+                    <h4>Recent Activity</h4>
+                </div>
+            </div>
+
+            <div class="dashboard-activity-list">
+                <div class="dashboard-activity-item">
+                    <span class="activity-dot"></span>
+                    <p><strong>Sarah</strong> completed the homepage redesign.</p>
+                </div>
+
+                <div class="dashboard-activity-item">
+                    <span class="activity-dot"></span>
+                    <p><strong>Michael</strong> uploaded the campaign report.</p>
+                </div>
+
+                <div class="dashboard-activity-item">
+                    <span class="activity-dot"></span>
+                    <p><strong>Emma</strong> invited two new team members.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
 </section>
 <section class="analytics reveal">
 
@@ -290,11 +399,11 @@
     </div>
 
 </section>
-<section class="recent-activity reveal">
+<section class="recent-activity">
 
     <div class="container activity-container">
 
-        <div class="activity-card">
+       <div class="activity-card reveal">
 
             <div class="activity-header">
                 <div>
@@ -344,7 +453,7 @@
 
         </div>
 
-        <div class="activity-text">
+        <<div class="activity-text reveal">
 
             <span class="section-badge">TEAMWORK</span>
 
@@ -364,7 +473,93 @@
     </div>
 
 </section>
-<section class="pricing reveal" id="pricing">
+<section id="testimonials" class="testimonials reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Trusted by productive teams</h2>
+
+            <p>
+                See how teams use FlowPilot to work smarter,
+                stay organized, and achieve better results.
+            </p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial-card reveal">
+
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                </div>
+
+                <p class="testimonial-quote">
+                    “FlowPilot gave our team one clear place to manage
+                    projects, deadlines, and daily priorities.”
+                </p>
+
+                <div class="testimonial-person">
+                    <div class="testimonial-avatar">SJ</div>
+
+                    <div>
+                        <h3>Sarah Johnson</h3>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="testimonial-card reveal">
+
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                </div>
+
+                <p class="testimonial-quote">
+                    “The dashboard is simple, fast, and easy to understand.
+                    Our weekly planning now takes half the time.”
+                </p>
+
+                <div class="testimonial-person">
+                    <div class="testimonial-avatar">MC</div>
+
+                    <div>
+                        <h3>Michael Chen</h3>
+                        <p>Product Lead</p>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="testimonial-card reveal">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                    ★★★★★
+                </div>
+
+                <p class="testimonial-quote">
+                    “FlowPilot helped us improve collaboration without
+                    adding more meetings or complicated tools.”
+                </p>
+
+                <div class="testimonial-person">
+                    <div class="testimonial-avatar">ER</div>
+
+                    <div>
+                        <h3>Emily Rodriguez</h3>
+                        <p>Operations Director</p>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="pricing" class="pricing">
 
     <div class="container">
 
@@ -379,7 +574,7 @@
 
         <div class="pricing-grid">
 
-            <div class="pricing-card">
+            <div class="pricing-card reveal">
 
                 <p class="pricing-name">Starter</p>
 
@@ -405,7 +600,7 @@
 
             </div>
 
-            <div class="pricing-card pricing-card-popular">
+            <div class="pricing-card pricing-card-popular reveal">
 
                 <span class="popular-badge">Most Popular</span>
 
@@ -434,7 +629,7 @@
 
             </div>
 
-            <div class="pricing-card">
+            <div class="pricing-card reveal">
 
                 <p class="pricing-name">Enterprise</p>
 
@@ -464,7 +659,7 @@
     </div>
 
 </section>
-<section class="faq reveal" id="faq">
+<section id="faq" class="faq reveal">
 
     <div class="container faq-container">
 
