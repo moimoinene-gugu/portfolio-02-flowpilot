@@ -6,7 +6,7 @@ This portfolio project demonstrates UI/UX design, responsive front-end developme
 
 ## 📸 Preview
 
-![FlowPilot Preview](images/flowpilot-preview.png)
+![FlowPilot Preview](images/flowpilot_preview.png)
 
 ---
 
